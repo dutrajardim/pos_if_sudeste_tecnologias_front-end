@@ -1,0 +1,7 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@media (min-width: 768px) {
+    .w-md-auto {
+        width: fit-content !important;
+    }
+}

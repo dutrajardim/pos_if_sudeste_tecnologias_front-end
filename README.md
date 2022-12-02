@@ -16,3 +16,6 @@ As atividades realizadas serão dispostas com base na estrutura que segue:
 > Obs. Os arquivos gerados a partir de scripts serão ignorados no repositório (adicionados ao .gitignore).
  
 O diretório **.devcontainer** contém os arquivos de configuração do ambiente docker com as dependências da atividade. Estes arquivos foram criados para utilização do plugin Dev Container para o VS Code.
+
+Descrição das atividades:
+* (Primaira atividade)[atividade_1/README.md]

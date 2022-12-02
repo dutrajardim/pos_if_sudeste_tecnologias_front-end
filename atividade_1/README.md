@@ -22,7 +22,7 @@ Foi realizado o download da biblioteca *Bootstrap* utilizando o gerenciado de pa
 Para iniciar o ambiente de desenvolvimento foi configurado um comando no **package.json** para iniciar o nodemon, este reinincia o servidor *express* sempre que for atualizado um arquivo scss ou html. Quando é salvo uma alteração em um arquivo scss, o comando compila um arquivo css que é disponibilizado de forma estática pelo servidor *express*. O comando pode ser acionado utilizando o NPM como mostrado a seguir:
 
 ```bash
--> npm run dev
+> npm run dev
 ```
 
 O compilador *sass* esta configurado para salvar o arquivo gerado no diretório **public/styles**.

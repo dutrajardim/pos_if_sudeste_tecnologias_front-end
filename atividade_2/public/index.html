@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/styles/bundle.css">
+    <script src="/assets/scripts/bundle.js"></script>
+    <!-- <meta http-equiv="refresh" content="3"> -->
+
+    <title>Suporte Social - Início</title>
+</head>
+
+<body style="overflow-x: hidden;">
+
+    <nav>
+
+        <!-- === Nav -->
+        <div class="navbar navbar-expand-md navbar-light bootsnav">
+            <div class="container">
+                <span class="navbar-brand h1 fw-bolder">Suporte Social</span>
+
+                <div class="collapse navbar-collapse">
+                    <div class="navbar-nav ms-auto gap-5">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link">
+                                Início
+                                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                            </a>
+                        </li>
+                        <li class="nav-item"><a href="#home" class="nav-link">Contatos
+                                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                            </a></li>
+                        <li class="nav-item"><a href="#orcamento" class="nav-link">Sobre nós
+                                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                            </a></li>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- === Hambuger -->
+        <button id="menu-btn" class="hamburger" type="button">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+        </button>
+        <!-- === Hambuger (END) -->
+
+        <!-- === Mobile Menu -->
+        <div id="menu" class="mobile-menu hidden">
+            <div class="navbar-nav mobile-menu__nav">
+                <a href="#home" class="nav-link w-100 fw-bold text-light">Início</a>
+                <a href="#orcamento" class="nav-link w-100 fw-bold text-light">Contatos</a>
+                <a href="#orcamento" class="nav-link w-100 fw-bold text-light">Sobre nós</a>
+            </div>
+        </div>
+        <!-- === Mobile Menu (END) -->
+
+    </nav>
+    <!-- === Nav (END) -->
+
+    <!-- === Banner -->
+    <section role="banner" class="min-vh-60 my-5">
+        <div class="banner-bg opacity-3">
+            <img src="/assets/images/bg-top.png" alt="">
+        </div>
+        <div class="container h-100">
+            <div class="row row-cols-1 row-cols-lg-2 text-center h-100">
+                <div class="col d-flex flex-column align-items-center justify-content-center">
+                    <img src="/assets/images/banner.png" alt="" class="mw-100">
+                </div>
+                <div
+                    class="col order-lg-first d-flex flex-column align-items-center align-items-lg-start justify-content-center px-5 gap-3">
+                    <h2 class="display-6 font-nunito fw-bold mt-5 mt-lg-0 text-lg-start">Sua <strong>estratégia</strong>
+                        de social media é nosso negócio</h2>
+                    <p class="lead text-lg-start">Analise de dados de redes sociais em relatórios personalizados para
+                        suas necessidades, e conforme a necessidade muda, nossa equipe ajusta o dashboard.</p>
+                    <a href="#services" class="btn btn-primary rounded-pill px-4 py-2 fw-bold">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- === Banner (END) -->
+
+    <!-- === Cards -->
+    <section class="my-5">
+        <div class="left-bg opacity-3">
+            <img src="/assets/images/bg-left.png" alt="">
+        </div>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center">
+                <div class="col p-3">
+                    <div class="card d-flex align-items-center gap-3">
+
+                        <img src="/assets/images/wc-cor-icon.png" style="width: 100px" alt="">
+                        <h3 class="font-nunito fw-bold">Lorem, ipsum.</h3>
+                        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi nemo iusto
+                            nostrum,
+                            exercitationem
+                            atque rem eaque rerum eveniet.</p>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card d-flex align-items-center gap-3">
+                        <img src="/assets/images/wc-joia-icon.png" style="width: 100px" alt="">
+                        <h3 class="font-nunito fw-bold">Lorem, ipsum.</h3>
+                        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi nemo iusto
+                            nostrum,
+                            exercitationem
+                            atque rem eaque rerum eveniet.</p>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card d-flex align-items-center gap-3">
+                        <img src="/assets/images/wc-twitter-icon.png" style="width: 100px" alt="">
+                        <h3 class="font-nunito fw-bold">Lorem, ipsum.</h3>
+                        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi nemo iusto
+                            nostrum,
+                            exercitationem
+                            atque rem eaque rerum eveniet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- === Cards (END) -->
+
+    <!-- === Features -->
+    <section class="my-5 features">
+        <div class="container text-center">
+
+            <!-- first row -->
+            <div class="d-flex flex-column flex-md-row">
+                <div class="p-5 m-5">
+
+                    <!-- image responsiv -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.458 26.458" class="features__icon">
+                        <path
+                            d="M112.584 142.014h-1.323v-7.937c0-.732-.591-1.323-1.323-1.323H88.772c-.732 0-1.323.591-1.323 1.323v14.552c0 .731.591 1.323 1.323 1.323h1.322v7.937c0 .732.592 1.323 1.324 1.323h5.291c.731 0 1.323-.591 1.323-1.323v-3.968H102v3.968c0 .732.592 1.323 1.323 1.323h9.26c.732 0 1.323-.591 1.323-1.323v-14.552c0-.731-.591-1.323-1.323-1.323zM96.709 157.89h-5.291v-2.646h5.291zm0-3.968h-5.291v-5.292h5.291zm2.646-1.324h-1.323v-2.645h1.323zm2.646 0h-1.323v-2.645h1.323zm0-3.968h-3.97c0-.732-.59-1.323-1.322-1.323h-5.291c-.732 0-1.324.592-1.324 1.323h-1.322v-14.552h21.166v7.937h-1.323V135.4h-18.52v10.583H102zm0-5.292v1.323H91.418v-7.937h15.875v5.291h-3.97c-.73 0-1.322.592-1.322 1.323zm10.583 14.552h-9.26v-3.307h9.26zm0-4.63h-9.26v-9.922h9.26zm-19.182 3.307a.662.662 0 1 1 1.323.001.662.662 0 0 1-1.323 0zm13.89-.661a.662.662 0 1 1 1.325 0 .662.662 0 0 1-1.324 0z"
+                            transform="translate(-87.449 -132.754)" />
+                    </svg>
+
+                    <h4>Utilize em seu dispositivo preferido</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eius ad mollitia
+                        necessitatibus, nesciunt placeat?</p>
+                </div>
+                <div class="p-5 m-5">
+
+                    <!-- security icon -->
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.458 26.458" class="features__icon">
+                        <path
+                            d="m111.253 143.329-13.23 2.646c0 19.108 13.23 23.812 13.23 23.812s13.23-4.704 13.23-23.812zm0 25.03c-2.196-.98-11.472-6.01-11.89-21.303l11.89-2.378 11.89 2.378c-.42 15.299-9.702 20.328-11.89 21.302zm3.969-15.77v-1.323a3.968 3.968 0 1 0-7.938 0v1.323c-.731 0-1.323.592-1.323 1.323v6.615c0 .731.592 1.323 1.323 1.323h7.938c.731 0 1.322-.592 1.322-1.323v-6.615c0-.731-.59-1.323-1.322-1.323zm-6.615-1.323a2.649 2.649 0 0 1 2.646-2.645 2.649 2.649 0 0 1 2.646 2.645v1.323h-5.292zm6.615 9.26h-7.938v-6.614h7.938zm-5.292-3.968a1.322 1.322 0 1 1 1.984 1.145v1.5h-1.323v-1.5a1.32 1.32 0 0 1-.661-1.145z"
+                            transform="translate(-98.024 -143.329)" />
+                    </svg>
+
+                    <h4>Suas informações estarão seguras</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eius ad mollitia
+                        necessitatibus, nesciunt placeat?</p>
+                </div>
+            </div>
+
+            <!-- second row -->
+            <div class="d-flex flex-column flex-md-row">
+                <div class="p-5 m-5">
+
+                    <!-- any time icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.458 26.458" class="features__icon">
+                        <path
+                            d="M176.64 174.288h2.645v2.646h-2.646zm6.91 8.669-.592 1.183 2.488 1.244 2.549 3.823 1.1-.734-2.742-4.114zm-6.91-2.055h2.645v-2.645h-2.646zm5.29-3.968h2.647v-2.646h-2.647zm5.293 0h2.645v-2.646h-2.645zm11.905 6.614h-6.746a6.615 6.615 0 1 1-12.965 0h-6.747V166.35h2.646v-1.323h1.323v1.323h2.646v-1.323h1.323v1.323h2.645v-1.323h1.324v1.323h2.646v-1.323h1.322v1.323h2.646v-1.323h1.323v1.323h2.646v-1.323h1.323v1.323h2.645zm-9.26 1.985v-1.323h1.28a5.301 5.301 0 0 0-4.587-4.588v1.28h-1.323v-1.28a5.302 5.302 0 0 0-4.588 4.588h1.28v1.323h-1.28a5.302 5.302 0 0 0 4.588 4.587v-1.28h1.323v1.28a5.3 5.3 0 0 0 4.587-4.587zm7.937-17.86h-1.322v1.324h-1.323v-1.324h-2.646v1.324h-1.323v-1.324h-2.646v1.324h-1.322v-1.324h-2.646v1.324h-1.324v-1.324h-2.645v1.324h-1.323v-1.324h-2.646v1.324h-1.323v-1.324h-1.323v14.552h5.842a6.616 6.616 0 0 1 12.128 0h5.842zm-5.29 5.292h2.645v-2.645h-2.646zm0 3.969h2.645v-2.646h-2.646zm-5.292-3.97h2.645v-2.644h-2.645z"
+                            transform="translate(-172.67 -165.027)" />
+                    </svg>
+
+                    <h4>Acesso em qualquer horário</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eius ad mollitia
+                        necessitatibus, nesciunt placeat?</p>
+                </div>
+                <div class="p-5 m-5">
+
+                    <!-- high availability icon -->
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.459 21.167" class="features__icon">
+                        <path
+                            d="M206.215 145.768c-4.385 0-7.937.889-7.937 1.984v3.42a30.265 30.265 0 0 0-2.646-.113c-4.385 0-7.938.89-7.938 1.985v11.906c0 1.096 3.553 1.984 7.938 1.984s7.937-.888 7.937-1.984v-3.42c.828.072 1.718.113 2.646.113 4.385 0 7.938-.889 7.938-1.985v-11.906c0-1.095-3.553-1.984-7.938-1.984zm0 1.323c2.67 0 4.627.329 5.744.662-1.117.333-3.075.66-5.744.66-2.668 0-4.626-.327-5.744-.66 1.118-.333 3.074-.662 5.744-.662zm-10.583 5.291c2.67 0 4.626.329 5.744.662-1.118.334-3.076.661-5.744.661-2.668 0-4.627-.327-5.744-.661 1.117-.333 3.074-.662 5.744-.662zm6.615 12.224c-.682.4-2.992 1.005-6.615 1.005-3.622 0-5.933-.604-6.615-1.005v-2.528c1.422.535 3.853.888 6.615.888s5.193-.353 6.615-.888zm0-3.968c-.682.4-2.992 1.005-6.615 1.005-3.622 0-5.933-.605-6.615-1.005v-2.529c1.422.535 3.853.888 6.615.888s5.193-.353 6.615-.888zm0-3.97c-.682.401-2.992 1.006-6.615 1.006-3.622 0-5.933-.605-6.615-1.005v-2.528c1.422.534 3.853.887 6.615.887s5.193-.353 6.615-.887zm10.583 2.647c-.682.4-2.992 1.005-6.615 1.005-.98 0-1.864-.045-2.646-.117v-2.642c.828.073 1.718.113 2.646.113 2.762 0 5.193-.352 6.615-.887zm0-3.97c-.682.401-2.992 1.006-6.615 1.006-.98 0-1.864-.044-2.646-.117v-2.642c.828.074 1.718.113 2.646.113 2.762 0 5.193-.352 6.615-.887zm0-3.968c-.682.4-2.992 1.005-6.615 1.005-1.328 0-2.48-.081-3.44-.204-.694-.357-1.805-.655-3.174-.853v-2.476c1.422.535 3.853.888 6.614.888 2.762 0 5.193-.353 6.615-.888z"
+                            transform="translate(-187.694 -145.768)" />
+                    </svg>
+
+                    <h4>Alta disponibilidade</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eius ad mollitia
+                        necessitatibus, nesciunt placeat?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- === Features (END) -->
+
+    <!-- === Footer -->
+
+    <footer class="bg-dark mt-5 d-flex flex-column" style="height: 40vh;">
+        <svg xmlns="http://www.w3.org/2000/svg" class="svg-shape" preserveAspectRatio="none" viewBox="0 0 1070 52">
+            <path d="M0,0S247,91,505,32c261.17-59.72,565-13,565-13V0Z"></path>
+        </svg>
+
+        <div
+            class="container flex-grow-1 text-light d-flex flex-column justify-content-center align-items-center pt-5 pb-2">
+            <h1 class="fw-bolder font-nunito text-secondary">Suporte Social</h1>
+            <span style="max-width: 250px;" class="text-center">© 2022 Suporte Social. Todos os direitos
+                reservados.</span>
+
+            <div class="d-flex w-100 socials m-5 justify-content-center gap-3 gap-md-5">
+                <a href="#">
+                    <!-- facebook -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114.58 116.03">
+                        <path
+                            d="M89.46,2.07C64,2.71,10.86-9.3,3.73,18.19c-.13,19.54-12.54,84.44,8.63,91.53,25.39,2,92.91,19,98-13C106.63,67.16,132.17,9.06,89.46,2.07Zm-6.4,40.05c-8.92-.39-11.21,12.81-2.1,13.37a5.92,5.92,0,0,1,5.88,7.56c-5,17-14.12-14.82-11.88,38.57.44,8-12.89,8.27-12.79.26V74.7a5.88,5.88,0,0,0-5.66-5.83c-5.08-.24-5.14-2.67-4.93-7.56.77-9.77,13.6-1,10.59-13.67-2.75-16.53,21.07-23.85,26-13.79C89.93,37.55,87.16,41.82,83.06,42.12Z" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <!-- google plus -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125.4 113.31">
+                        <path
+                            d="M121.78,32.32C111.83,10,85.43,3.19,63.19,1,9.71-6.63-12.41,31.76,6.86,78.65c28.77,54.66,104.42,41.55,117.19-17.54C126.49,50.58,125.54,40.76,121.78,32.32Zm-54,17.11C86.72,53.86,65.73,83,52,81.07c-26.44,1.76-40.64-30-19.27-46.88,8.24-6.52,27.49-7.32,33.08,2.63-1,6.58-14.7,1.3-19.63,2.74-38.57,6,5.15,60.33,19.39,18.28-32.22.58-12.42-10.13.79-8.63m27.22-3.86s0,0,0,.07h0ZM107,53.6c-16.11,5-4,3.26-10,9.84-4.09,1.91-3.9-2.82-3.86-7-11.63-1.83-13.73-6.7-.6-8C94,44.13,96.46,35,99.9,49.11,103.9,51,109,48.55,107,53.6Z" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <!-- instagram -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117.22 114.43">
+                        <path
+                            d="M51.48.37c28.12,2.32,64.91-1,65.09,30.54-.78,29.77,10,80.71-33.28,82.45C53.53,112.6,6.36,124.93,4.62,81.69.86,36.07-16-4.3,51.48.37Zm7,26.18c-37.5-.19-37.09,58.66.46,57.9C96.44,84.63,96,25.79,58.47,26.55ZM95.7,18.9c-4.54-4.14-9,2.85-4.75,6.06C94.09,27.87,99.8,21.78,95.7,18.9Z" />
+                        <path d="M78.05,56.78c3.4,28.61-41.66,21.79-40.22-3.47C38,28.79,75.36,30.11,78.05,56.78Z" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <!-- linkedin -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138.82 138.31">
+                        <path
+                            d="M69.06,137C-32.15,145.68,10.34,112.4,1.88,21.21.39-15.79,91,8.28,117.21,1.82,154.74-.29,130.57,90.55,137,116.75,137.43,150.68,90.57,132.69,69.06,137Zm3.6-22.86C75,100.71,65.05,71,84.07,69.39c26.5,5.3-7,55.56,30.39,44.58,3.24-71.62-7.06-57-60.66-60C58.77,75.81,38.89,121.76,72.66,114.11ZM25.05,53.47c4.92,21-14.56,67.85,18.05,60.42C38.13,92.52,57.76,46.16,25.05,53.47Zm13.46-11C57.33,23.72,12,21.92,29,42.22A6.31,6.31,0,0,0,38.51,42.51Z" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <!-- pinterest -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 134.47 135.04">
+                        <path
+                            d="M106.42,11.16C67.28-17.11,3.47,11.66.05,60.25c-1.32,31.32,23.36,60.61,52,71.09C123.44,156,165.54,50.88,106.42,11.16ZM83.94,1.91a2.56,2.56,0,0,1-.12.41ZM58.7,28.62l.23-.06-.24.1S58.68,28.64,58.7,28.62Zm-.48.14a10.37,10.37,0,0,1-2.9,1C56.26,29.41,57.23,29.08,58.22,28.76ZM97.4,73.21C86.12,102.09,60,70.67,53.07,105.68,47,111.34,54.68,63.48,56,60.09c1.26-4.65,3-11,8.3-12.17,4.15-.4,5.76,4.7,4.82,8.38-4,8.16-4.13,14.58,2.17,21.66,16,17.28,26.93-30,15.05-38.51-10.16-10.66-30.74-6.76-38.71,5C42,52.93,43.69,64,46,74a.71.71,0,0,1-1.13.71c-6-4.88-10.75-11.86-10.79-19.57C40,14,116.08,17,97.4,73.21Zm22.25-50c0-.08-.08-.29.21,0A.56.56,0,0,0,119.65,23.16Z" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <!-- twitter -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.48 112.28">
+                        <path
+                            d="M140.45.81l0-.15C126.64,10.2,119.37,4.92,105.05.6,88.71-3,71.83,10.35,71.68,27.1c.16,3.57-1.08,7.74-5.19,6.62C45.82,33.61,12-4,10.75,10.48a32.35,32.35,0,0,0,7.55,30L9.42,38.55A34.4,34.4,0,0,0,25.79,67a16.86,16.86,0,0,0-5.49.08,18.46,18.46,0,0,1,2.78,5.1,2.19,2.19,0,0,0-2.16-.85A49.13,49.13,0,0,0,42.27,89.19C30.32,98,13.15,100,0,93.92c16.86,20.28,50.65,22.46,74,12.86,36.8-15.84,54.39-55.37,66-91.38l-9.38.83A27.87,27.87,0,0,0,140.45.81Z" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <!-- youtube -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131.83 132.3">
+                        <path
+                            d="M11.38,7.21c-23.73,19.08-2,75.42-7.86,102.5C2.37,145.16,77,128.37,111,128a17.38,17.38,0,0,0,15.79-10.24c11.88-26.91-1.56-63.86,2.3-92.89,2.11-42.31-74.45-17-106.37-20.72A15.23,15.23,0,0,0,11.38,7.21Zm24.8,8.15c8.51-2.54,9.61,6.31,12,12.05,2.41-5.72,3.54-14.6,12-12-3.57,7.38-11.34,24.7-9,33.12C42,50.84,46,41.67,45.21,36.4,43.4,31.56,37.41,18.4,36.18,15.36Zm30.1,9c12.67-1.06,12.67,25,0,24.09C53.72,49.39,53.49,23.3,66.28,24.39Zm12,0c12.52-4.88,1.46,17.45,7.86,19.24,10-1-2.68-23.58,10.2-19.23-1.89,3.82,5.11,29.55-6,24.07V44.32C75.43,59,78.36,32.35,78.32,24.39Zm-12,4.88c-4.64.1-4.64,14.5,0,14.6C70.91,43.79,70.92,29.36,66.28,29.27ZM42.64,57.62c2.3,0,46.15-.11,48.45-.11,32.21-.1,44.31,63.62-24.81,63.73C-1.13,121.35,3.48,57.51,42.64,57.62ZM27.15,69.55c-.65,5.78.32,6.55,6,6v30.17c11.6,6.4,3.9-26.84,6-30.17,5.66.63,6.68-.22,6-6Zm39.13,0c2.39,3.1-6,43.11,6,36.12-1.54-7.67,8.67,6,11.39-3.55.35-6.09,3.82-22.53-5-23.54-3,0-4.14,1.5-6.4,4.14C71.37,77.61,75.78,66.88,66.28,69.55Zm-21.07,9c.61,7.79-4.19,38.5,12,23v4.11c11.37,6,4-23.56,6-27.09-13.43-4.67.45,21.44-10.48,21.94C46.86,98.46,57.79,73.34,45.21,78.58Zm51.26,0c-17.77.16-9.23,38.94,7.33,24.23,3.62-4.69.82-7.17-4.41-6.17.3,9.21-8.53,3.67-6-3h12C106,86.72,105.35,78.17,96.47,78.58Zm-.09,4.36c5,1,4.72,8.45-3,6.52C93.43,87.1,92.58,82.83,96.38,82.94ZM76,83.84c4.27.63,4.28,23-3.67,15.06C72.94,96.16,70,82.93,76,83.84Z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- === Footer (END) -->
+
+</body>
+
+</html>

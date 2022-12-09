@@ -1,0 +1,19 @@
+.features {
+
+    h4 {
+        margin-bottom: .33em;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__icon {
+        stroke-width: .05;
+        stroke: $dark;
+        fill: $dark;
+        margin-bottom: 1.4em;
+        max-width: 110px;
+    }
+}

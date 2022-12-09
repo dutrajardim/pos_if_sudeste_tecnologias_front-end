@@ -1,0 +1,17 @@
+// js script altera data-scroll quando é utilizado o scroll
+html:not([data-scroll='0']) {
+    padding-top: 5em;
+}
+
+html:not([data-scroll='0']) .bootsnav {
+    position: fixed;
+    top: 0;
+    background-color: $white;
+    box-shadow: 0 0 .5em rgba(0, 0, 0, .3);
+}
+
+.bootsnav {
+    height: 5em;
+    width: 100%;
+    z-index: 10;
+}

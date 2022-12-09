@@ -1,0 +1,37 @@
+footer {
+    .svg-shape {
+        fill: $white;
+        width: 100%;
+    }
+
+    .socials {
+        a {
+            &:hover {
+                &:nth-child(even) {
+                    svg {
+                        fill: $primary;
+                        transform: rotate(10deg) scale(1.2);
+                    }
+                }
+
+                &:nth-child(odd) {
+                    svg {
+                        fill: $primary;
+                        transform: rotate(-10deg) scale(1.2);
+                    }
+                }
+
+            }
+
+            svg {
+                transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+                width: 30px;
+                fill: $light;
+            }
+        }
+
+        img {
+            width: 30px;
+        }
+    }
+}

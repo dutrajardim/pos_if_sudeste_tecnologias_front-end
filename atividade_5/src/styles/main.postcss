@@ -1,0 +1,141 @@
+@import "normalize"; /* also, @import "normalize.css" */
+@import "sanitize/*"; /* also, @import "sanitize.css" (sanitize + all additions) */
+
+:root {
+    --primary-color: rgb(35, 111, 155);
+}
+
+h2 {
+    text-align: center;
+}
+
+
+.root {
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width: 720px) {
+        flex-direction: column;
+    }
+
+    > div {
+        background-color: rgba(240, 240, 240);
+        box-shadow: 1px 3px 13px rgb(0 0 0 / .1);
+        flex-grow: 1;
+        margin: 10px 20px;
+        border-radius: 5px;
+        padding: 15px 0;
+    }
+}
+
+.task-name-editor {
+    border: 0;
+    background-color: rgb(255 255 255 / .4);
+    padding: 5px 10px;
+    margin: 1px 5px;
+    color: rgba(0, 0, 0, .7);
+    border-radius: 3px;
+}
+
+.task-list-input {
+    display: flex;
+    gap: 5px;
+    padding: 5px 15px;
+
+    input[type=text] {
+        flex-grow: 1;
+        background-color: rgb(255 255 255 / .8);
+        border: 0;
+        padding: 5px 10px;
+        margin: 1px 5px;
+        color: rgba(0, 0, 0, .7);
+        border-radius: 3px;
+    }
+
+    button {
+        border: 0;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: all .3s;
+        color: black;
+        background-color: rgb(0 0 0 / .3);
+        
+        &:hover:not(:disabled) {
+            transition: all .3s;
+            cursor: pointer;
+            color: white;
+            background-color: var(--primary-color);
+            box-shadow: 0 3px 7px rgb(0 0 0 / .2)
+        }
+
+        &:disabled {
+            background-color: rgb(0 0 0 / .04);
+        }
+    }
+}
+
+.task-list {
+    margin: 25px 2px 5px;
+    height: 160px;
+    overflow-y: scroll;
+    background-color: rgb(0 0 0 / .04);
+    padding: 10px 0;
+
+    li {
+        padding: 5px 15px;
+        display: flex;
+        margin: 0;
+        border: 0;
+
+        &[data-estudar=true] {
+            color: white;
+            background-color: var(--primary-color);
+
+            .actions {
+                button {
+                    background-color: var(--primary-color);
+                }
+
+                svg {
+                    color: white;
+                }
+            }
+        }
+
+        label {
+            padding: 5px 10px;
+            margin: 1px 5px;
+            margin: auto;
+            flex-grow: 1;
+
+        }
+
+        .actions {
+            display: flex;
+
+            button {
+                border: 0;
+                transition: all .3s;
+                background-color: unset;
+
+                svg {
+                    transition: all .3s;
+                    width: 18px;
+                    color: black;
+                }
+
+                &:hover {
+                    transition: all .3s;
+                    scale: 1.4;
+                    cursor: pointer;
+
+                    svg {
+                        transition: all .3s;
+                        stroke-width: 2px;
+                    }
+                }
+            }
+            
+        }
+    }
+}

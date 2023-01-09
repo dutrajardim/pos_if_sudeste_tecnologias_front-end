@@ -1,0 +1,111 @@
+@import "normalize"; /* also, @import "normalize.css" */
+@import "sanitize/*"; /* also, @import "sanitize.css" (sanitize + all additions) */
+
+:root {
+    --primary-color: 8 70 83;
+    --secondary-color: 42 157 143;
+    --warning-color: 233 196 106;
+    --alert-color: 128 0 0;
+}
+
+button, input[type=submit] {
+    cursor: pointer;
+    border: 0;
+    transition: all .3s ease-out;
+    padding: 8px 15px;
+    background-color: rgb(0 0 0 / .03);
+    color: rgb(0 0 0);
+
+    &:hover:not(:disabled) {
+        color: rgb(0 0 0 / .3);
+        transition: all .3s ease-in;
+        background-color: rgb(0 0 0 / .03);
+        box-shadow: 1px 2px 10px rgba(0, 0, 0, .2);
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        color: rgb(0 0 0 / .2);
+        background-color: rgb(0 0 0 / .02);
+    }
+}
+
+.container {
+    max-width: 100vw;
+    padding: 0 3vw;
+    margin: 0 auto;
+
+    @media (min-width: 481px) and (max-width: 768px) {
+        max-width: 630px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        max-width: 850px; 
+    }
+
+    @media (min-width: 1025px) {
+        max-width: 1150px;
+    }
+
+}
+
+.nav {
+    background-color: rgb(0 0 0 / .1);
+    margin-bottom: 40px;
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        h1 {
+            font-size: 1.3rem;
+        }
+
+        button {
+            text-transform: uppercase;
+            background-color: initial;
+
+            &:hover:not(:disabled) {
+                background-color: initial;
+                box-shadow: none;
+            }
+        }
+    
+    }
+}
+
+form {
+    .form-field {
+        display: flex;
+        flex-direction: column;
+    }
+    .input-helper {
+        text-align: right;
+        font-weight: bolder;
+
+        span {
+            padding: 0 5px;
+
+            &[data-classification=poor] {
+                color: rgb(var(--alert-color));
+            }
+            &[data-classification=good] {
+                color: rgb(var(--warning-color));
+            }
+            &[data-classification=excellent] {
+                color: rgb(var(--primary-color));
+            }
+        }
+    }
+}
+
+.warning {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: rgb(var(--warning-color));
+    
+}

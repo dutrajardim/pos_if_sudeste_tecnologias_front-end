@@ -22,3 +22,5 @@ Descrição das atividades:
 * [Primaira atividade](atividade_1/README.md) 
 * [Segunda atividade](atividade_2/README.md) 
 * [Terceira atividade](atividade_3/README.md)
+* [Quarta atividade](atividade_4/README.md) 
+* [Quinta atividade](atividade_5/README.md)
